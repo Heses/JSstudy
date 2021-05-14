@@ -1,0 +1,19 @@
+<script>
+
+    //forEach()
+    const nums =[123,45,678,90,97]
+
+    nums.forEach(function (value, index, array){ //<--을 매개변수로 갖는 콜백함수 사용
+        console.log(`${index}번째 요소 : ${value}`)
+    })
+
+    //map()
+    let nums2 =[1234,56,789,000,97]
+
+    nums2=nums2.map(function (value, index, array){
+        return value*value
+    })
+    
+    nums2.forEach(console.log) //console.log = 메소드
+
+</script>

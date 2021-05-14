@@ -1,0 +1,35 @@
+<script>
+    //화살표 함수
+    let nums = [0,1,2,3,4,5,6,7,8,9]
+
+    nums
+        .filter((value) => value%2==0)
+        .map((value) => value*value)
+        .forEach((value) => {
+            console.log(value)
+        })
+
+</script>
+
+<script>
+    //strict mode
+    
+    (function () {
+        'use strict'
+        data = 10
+        console.log(data)
+    }) ()
+
+</script>
+
+<script>
+    //확인문제1
+    let nums2 = [273,25,75,52,103,32,57,24,76]
+
+    nums2 = nums2
+                .filter((x) => x%2==1)
+                .filter((x) => x<=100)
+                .filter((x) => x%5==0)
+        
+    console.log(nums2)
+</script>

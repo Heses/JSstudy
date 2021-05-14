@@ -1,0 +1,29 @@
+<script>
+
+//선언적 함수 사용
+
+    function call3times(callback){
+        for (let i=0; i<3; i++){
+            callback(i)
+        }
+    }
+
+    function print(i){
+        console.log(`${i}번째 함수 호출`)
+    }
+
+    call3times(print)
+
+//익명함수 사용
+
+    function call3times2(callback){
+        for (let i=0; i<3; i++){
+            callback(i)
+        }
+    }
+
+    call3times2(function(i) {
+        console.log(`${i}번째 함수 호출2`)
+    })
+
+</script>
